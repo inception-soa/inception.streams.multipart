@@ -1,0 +1,50 @@
+{
+  "name": "inception.streams.multipart",
+  "version": "1.0.0",
+  "description": "Mutipart message parser and streamer",
+  "keywords": [
+    "inception",
+    "stream",
+    "multipart"
+  ],
+  "homepage": "https://github.com/inception-soa/inception.streams.multipart#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inception-soa/inception.streams.multipart.git"
+  },
+  "bugs": {
+    "url": "git://github.com/inception-soa/inception.streams.multipart/issues"
+  },
+  "author": "Anand Suresh",
+  "contributors": [
+    {
+      "name": "Anand Suresh",
+      "url": "https://github.com/anandsuresh",
+      "email": "anandsuresh@gmail.com"
+		}
+	],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "scripts": {
+    "lint": "inception-standard",
+    "pretest": "npm install && npm run lint",
+    "test": "mocha --ui bdd --reporter spec --recursive spec",
+    "coverage": "NODE_ENV=test istanbul cover -x \"spec/**\" _mocha -- --ui bdd --reporter spec --recursive spec && open coverage/lcov-report/index.html > /dev/null 2>&1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "inception-standard": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "inception.debug": "^1.0.0",
+    "inception.primitives": "^1.0.0",
+    "lodash": "^4.17.2",
+    "uuid": "^3.0.1"
+  }
+}
