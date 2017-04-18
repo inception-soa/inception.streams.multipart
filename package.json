@@ -1,6 +1,6 @@
 {
   "name": "inception.streams.multipart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mutipart message parser and streamer",
   "keywords": [
     "inception",
@@ -21,8 +21,8 @@
       "name": "Anand Suresh",
       "url": "https://github.com/anandsuresh",
       "email": "anandsuresh@gmail.com"
-		}
-	],
+    }
+  ],
   "license": "Apache-2.0",
   "main": "index.js",
   "engines": {
